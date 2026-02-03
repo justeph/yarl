@@ -472,7 +472,6 @@ jobs:
       📦 Build wheels for odd arches${{ '' }}
     needs:
     - build-pure-python-dists
-    - pre-deploy
     - pre-setup  # transitive, for accessing settings
     strategy:
       matrix:
